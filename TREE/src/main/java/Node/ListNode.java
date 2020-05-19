@@ -10,7 +10,7 @@ public class ListNode<T> {
 
     @Override
     public String toString() {
-        return  key +
-                "->"+ next;
+        return key +
+                "->" + next;
     }
 }

@@ -1,8 +1,5 @@
 package sorts;
 
-import com.google.common.collect.Lists;
-
-import java.net.Inet4Address;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -19,11 +16,11 @@ public class InsertSort {
         for (int i = 0; i < objects.size(); i++) {
             System.out.print(objects.get(i) + " ");
         }
-        System.out.println("after sort:\n");
-        Integer[] objects1 = (Integer[]) objects.toArray();
+        System.out.println("\nafter sort:\n");
+        Integer[] objects1 = objects.toArray(new Integer[objects.size()]);
         Integer[] ints = insertSort(objects1);
         for (int i = 0; i < ints.length; i++) {
-            System.out.println(ints[i] + " ");
+            System.out.print(ints[i] + " ");
         }
         System.out.println("\n");
     }
